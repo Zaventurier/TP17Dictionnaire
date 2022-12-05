@@ -1,6 +1,7 @@
 package tp17Dictionnaire;
 
 //Imports de class
+import java.util.Map;
 import java.util.Scanner;
 import java.util.HashMap;
 
@@ -40,6 +41,21 @@ public class Main {
             System.out.println(fruits);
         }
 
+        System.out.println("5) Afficher tout les éléments :");
+
+        for (Map.Entry map : panier.entrySet()) {
+            System.out.println(map + " kg");
+        }
+
+        System.out.println("6) calcul du total des quantités :");
+
+        float total = 0;
+        for(int fruits : panier.values()){
+            total += fruits;
+        }
+        System.out.println(total);
+
+        System.out.println("7) Recherche du fruit qui à la plus grande quantité :");
 
 
 

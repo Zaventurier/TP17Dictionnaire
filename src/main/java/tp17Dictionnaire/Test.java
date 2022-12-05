@@ -1,6 +1,7 @@
 package tp17Dictionnaire;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class Test {
     public static void main(String[] args) {
@@ -17,7 +18,9 @@ public class Test {
         panier.put("framboise", 2);
 
 
-
+        for (Map.Entry map : panier.entrySet()) {
+            System.out.println(map + " kg");
+        }
 
 
 
